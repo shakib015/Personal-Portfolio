@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1220px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 768px){
+    html{
+        font-size: 46%;
+    }
+}
+
+/* First Section Property */
+
+#first-section{
+    width: 100%;
+    height: 100%;
+    background:#0b0c10;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+#welcome-section{
+    display: grid;
+    font-size: 4rem;
+    padding-top: 15rem;
+    justify-items: center;
+}
+
+#welcome-section h1{
+    font-family: lobster;
+}
+
+#welcome-section p{
+    color: rgba(218, 18, 158, 0.9);
+    font-weight: thin;
+    
+}
+
+#welcome-section p #lazyprogs{
+    color: white;
+    font-weight: bolder;
+}
+
+#welcome-section #profile-picture{
+    width: 22rem;
+    height: 22rem;
+    margin: 3rem 0 -3rem 0;
+    border-radius: 50%;
+    border: 5px solid rgba(218, 18, 158, 0.9);
+    box-shadow: 0 0 1rem rgba(218, 18, 158, 0.7);
+}
+
+.header nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background: rgb(0, 0, 0);
+}
+
+#navbar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#navbar a{
+    display: block;
+    padding: 2rem;
+}
+
+#navbar a:hover{
+    background: rgba(218, 18, 158, 0.5);
+    transition: 0.5s;
+}
+
+.html-design{
+    color: transparent;
+}
+
+#navbar a:hover .html-design{
+    color: rgba(255, 255, 255, 0.9);
+    transition: 2s;
+}
+
+#first-section-footer{
+    display: flex;
+    text-align: center;
+    padding-top: 10rem; 
+    height: 40%;
+}
+
+#first-section-footer #first-section-icon{
+    width: 100%;
+    align-self: center;
+}
+
+#first-section-footer #first-section-icon img{
+    margin-right: 7rem;
+    padding: 2rem;
+}
+
+
+#first-section-footer #first-section-icon img:hover{
+    background: rgba(218, 18, 158, 0.5);
+    transition: 0.5s;
+}
+
+
+@media(max-width: 1220px){
+    .header{
+        height: 50%;
+    }
+
+    #first-section-footer{
+        padding-top: 8rem; 
+        height: 50%;
+    }
+    
+    
+    #first-section-footer #first-section-icon img{
+        margin-right: 4rem;
+    }
+    
+}
+
+
+@media(max-width: 768px){
+    .header{
+        height: 50%;
+    }
+
+
+    #first-section-footer{
+        padding-top: 8rem; 
+        height: 50%;
+    }
+    
+    
+    #first-section-footer #first-section-icon img{
+        margin-right: 2rem;
+    }
+    
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 30%;
+    }
+    #welcom
+    e-section{
+        padding-top: 35rem;
+    }
+
+    #navbar{
+        font-size: 2.3rem;
+    }
+    .header{
+        height: 50%;
+    }
+
+
+    #first-section-footer{
+        padding-top: 8rem; 
+        height: 50%;
+    }
+    
+    
+    #first-section-footer #first-section-icon img{
+        margin-right: 2rem;
+    }
+    
+}
+/* First Section Property */
+
+
+
+
+
+/* Arrow Property */
+
+.arrow{
+    display: grid;
+    width: 20%;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    font-size: 6rem;
+    float: right;
+}
+
+.arrow a{
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.arrow a:hover{
+    background: rgba(218, 18, 158, 0.5);
+    transition: 0.5s;
+}
+
+/* Arrow Property */
+
+
+
+
+
+
+/* Project Section Property */
+
+#projects{
+    width: 100%;
+    height: 100%;
+    background: #1f2833;
+    background-repeat: no-repeat;
+}
+
+#projects #project-flex-box{
+    display: flex;
+    padding-top: 12rem;
+    height: 90%;
+}
+
+#container-projects{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container-projects .img-box{
+    width: 25%;
+    height: auto;
+    border: 5px solid rgba(218, 18, 158, 0.9);
+    margin: 0 10rem 10rem 10rem;
+}
+
+#container-projects .img-box img{
+    width: 100%;
+    height: auto;
+}
+
+#container-projects .img-box .project-title{
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 22, 17, 0.6);
+}
+
+#container-projects .img-box .project-title:hover{
+    background: rgba(218, 18, 158, 0.5);
+    transition: 0.5s;
+}
+
+#container-projects .img-box:hover{
+    box-shadow: 0 0 1rem 1rem rgba(0, 22, 17, 1);
+    transition: 0.5s;
+}
+
+@media(max-width: 1220px){
+    
+    #projects #project-flex-box{
+        padding-top: 10rem;
+    }
+    
+    
+    #container-projects .img-box{
+        width: 60%;
+    }
+}
+
+@media(max-width: 768px){
+    
+    #container-projects .img-box{
+        width: 70%;
+    }
+}
+
+@media(max-width: 400px){
+    
+    #container-projects .img-box{
+        width: 90%;
+    }
+}
+/* Project Section Property */
+
+
+
+
+
+
+/* About Section Property */
+
+#about-section{
+    width: 100%;
+    height: 100%;
+    background: #0b0c10;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+#about-section #about-flex-box{
+    display: flex;
+    padding-top: 12rem;
+    justify-content: space-evenly;
+}
+
+#about-section #about-flex-box #my-image{
+    width: 40%;
+    text-align: center;
+}
+
+#about-section #about-flex-box #my-image img{
+    width: 66%;
+    height: auto;
+    box-shadow: 0 0 0.5rem 0.5rem rgba(218, 18, 158, 0.4);
+}
+
+#about-section #about-flex-box #about-myself{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    line-height: 2;
+    font-size: 2.5rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#about-section #about-flex-box #about-myself h2{
+    margin-top: 4rem;
+}
+
+
+@media(max-width: 1220px){
+  
+    #about-section #about-flex-box{
+        flex-direction: column;
+    }
+    
+    #about-section #about-flex-box #my-image{
+        width: 40%;
+        padding-left: 30%;
+    } 
+ 
+}
+
+@media(max-width: 768px){
+  
+    #about-section #about-flex-box{
+        flex-direction: column;
+    }
+    
+    #about-section #about-flex-box #my-image{
+        width: 50%;
+        padding: 0;
+    } 
+
+    #about-section #about-flex-box #about-myself{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        line-height: 2;
+        font-size: 2.2rem;
+        padding: 1rem 0 1rem 0;
+    }
+}
+
+@media(max-width: 400px){
+  
+    #about-section #about-flex-box{
+        flex-direction: column;
+    }
+    
+    #about-section #about-flex-box #my-image{
+        width: 60%;
+        padding: 0;
+    } 
+
+    #about-section #about-flex-box #about-myself{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        line-height: 1.5;
+        font-size:2.4 rem;
+        padding: 2rem 0 1rem 0;
+    }
+}
+
+/* About Section Property */
+
+
+
+
+
+
+
+/* Contact Section Property */
+
+#contact-section{
+    width: 100%;
+    height: 100%;
+    background: #1f2833;
+    background-repeat: no-repeat;
+}
+
+#contact-section #contact-flex-box{
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+}
+
+#contact-body{
+    font-size: 4.5rem;
+    text-align: center;
+    align-self: center;
+}
+
+#contact-section .arrow{
+    justify-self: flex-end;
+    height: 10%;
+    margin: 5rem 0 5rem 0;
+}
+
+.contact-icons{
+    margin-top: 5rem;
+    font-family: monospace;
+    font-size: 2.5rem;
+}
+
+.contact-icons .btn{
+    padding: 3rem;
+}
+
+.contact-icons .btn:hover{
+    background: rgba(218, 18, 158, 0.5);
+    transition: 0.5s;
+}
+
+#contact-footer{
+    height: 5%;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media(max-width: 1220px){
+    
+    #contact-body{
+        width: 80%;
+    }
+
+    
+    .contact-icons{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5rem;
+        line-height: 3;
+    }
+}
+
+@media(max-width: 768px){
+    
+    #contact-body{
+        width: 80%;
+    }
+
+    
+    .contact-icons{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+        line-height: 1;
+    }
+}
+
+
+/* Contact Section Property */
